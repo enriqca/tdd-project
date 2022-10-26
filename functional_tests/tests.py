@@ -13,15 +13,15 @@ options.set_preference("browser.download.folderList",2)
 options.set_preference("browser.download.manager.showWhenStarting", False)
 options.set_preference("browser.download.dir","/Data")
 options.set_preference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream,application/vnd.ms-excel")
-browser = webdriver.Firefox(executable_path=r'C:\Users\RICKC\Desktop\S.I\sem2022-2\TST\tdd-project/geckodriver.exe', options=options)
+# browser = webdriver.Firefox(executable_path=r'C:\Users\RICKC\Desktop\S.I\sem2022-2\TST\tdd-project/geckodriver.exe', options=options)
 
 class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
-        self.browser = browser
+        self.browser = webdriver.Firefox(executable_path=r'C:\Users\RICKC\Desktop\S.I\sem2022-2\TST\tdd-project/geckodriver.exe', options=options)
 
-    # def tearDown(self):
-    #     self.browser.quit()
+    def tearDown(self):
+        self.browser.quit()
 
     def test_can_start_a_list_for_one_user(self):
     
