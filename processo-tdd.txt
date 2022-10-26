@@ -1,0 +1,4 @@
+O processo de testes envolvendo testes funcionais se inicia escrevendo um teste funcional, e rodando-o. O teste passando se for necessário refatorá-lo, volta ao passo inicial.
+Se não for necessário refatorar o teste funcional aí pode prosseguir para os testes de unidade, onde se assume o processo 'comum' do TDD, escrevendo o teste, rodando-o e o teste não passando se escreve o código mínimo para que passe.
+Após ter seu código mínimo, rodar os testes de unidade novamente, que se não passarem repetir o mesmo processo, e quando passarem analisar se é necessário refatorar o código, sendo necessário basta repetir o processo novamente. 
+  
