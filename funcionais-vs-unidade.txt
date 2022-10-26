@@ -1,0 +1,3 @@
+Testes funcionais costumam ser mais lentos e caros e normalmente são feitos em menores quantidade.
+
+Testes de unidade são rápidos e normalmente automatizados, podendo ser rodados após cada alteração para testar se o comportamento do código se mantém.
